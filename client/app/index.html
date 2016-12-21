@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Security Framework</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/main.css">
+	
+	
+	
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+
+     <!--Scripts-->
+    <script src="scripts/app.js"></script>
+	<script src="scripts/angular-ui-router.js"></script>
+	
+	<!--Controllers-->
+	<script src="scripts/controllers/mainController.js"></script>
+	<script src="scripts/controllers/loginController.js"></script>
+	
+	
+	<!--Moduls-->
+	<script src="scripts/Modules/routingModule.js"></script>
+	<script src="scripts/Modules/runModule.js"></script>
+     
+	 
+	<!-- Scripts -->
+
+  </head>
+  <body ng-app="Application">
+
+   <div class="container body-content"  ng-Controller='mainController'>
+
+        <div>
+
+            <div class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a ui-sref ="Home" class="navbar-brand" >Security Framework</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						<li><a ui-sref="Login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        
+		</div>
+		
+	<div class="container">
+		<div ui-view>
+		<h1>{{message}}</h1>
+		</div>
+    </div>
+		
+    </div>
+
+
+
+
+	
+
+</body>
+</html>
